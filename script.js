@@ -26,6 +26,7 @@ hiddenInput.addEventListener('keyup', function(event) {
     if (userInput === secretCode){
         codePopup.style.display= `block`;
         userInput = ``;
+        hiddenInput.focus();
     }
 
     if (userInput.length > 4 && userInput !== secretCode){
